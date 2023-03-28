@@ -84,12 +84,12 @@ Train Epoch: 50 Loss: 0.070880  Acc: 0.986813
 # 实验3
 ## 执行命令：
 ```
-python ex3_by.py
+python ex3_bp.py
 ```
 ## 参考结果如下：
 
 ```log
-loss:[0.69203409] batch_acc:0.75 batch_size:4 lr:10
+loss:[0.69203409] batch_acc:0.75 batch_size:4 lr:10                                                                                                                   
 loss:[1.25450985] batch_acc:0.75 batch_size:4 lr:10
 loss:[0.67399435] batch_acc:0.75 batch_size:4 lr:10
 loss:[0.73806371] batch_acc:0.75 batch_size:4 lr:10
@@ -146,7 +146,7 @@ loss:[0.00916912] batch_acc:1.0 batch_size:4 lr:10
 loss:[0.00889216] batch_acc:1.0 batch_size:4 lr:10
 loss:[0.00863097] batch_acc:1.0 batch_size:4 lr:10
 loss:[0.00838425] batch_acc:1.0 batch_size:4 lr:10
-loss:[0.00815082] batch_acc:1.0 batch_size:4 lr:10
+loss:[0.00815082] batch_acc:1.0 batch_size:4 lr:10                                                                                                                     
 loss:[0.00792966] batch_acc:1.0 batch_size:4 lr:10
 loss:[0.00771982] batch_acc:1.0 batch_size:4 lr:10
 loss:[0.00752047] batch_acc:1.0 batch_size:4 lr:10
@@ -188,7 +188,7 @@ loss:[0.00390295] batch_acc:1.0 batch_size:4 lr:10
 loss:[0.00384896] batch_acc:1.0 batch_size:4 lr:10
 loss:[0.0037964] batch_acc:1.0 batch_size:4 lr:10
 loss:[0.00374521] batch_acc:1.0 batch_size:4 lr:10
-loss:[0.00369534] batch_acc:1.0 batch_size:4 lr:1
+loss:[0.00369534] batch_acc:1.0 batch_size:4 lr:10
 ```
 
 # 实验4
@@ -200,50 +200,50 @@ python examples_torch.py
 ## 参考结果如下：
 ```log
 X:
- tensor([[1., 2., 3.]]) 
+ tensor([[1., 2., 3.]])
 Shape: torch.Size([1, 3])
 W:
  tensor([[-0.5000],
         [ 0.2000],
-        [ 0.1000]]) 
+        [ 0.1000]])
 Shape torch.Size([3, 1])
 Z:
- tensor([[0.7000]]) 
+ tensor([[0.7000]])
 Shape torch.Size([1, 1])
 X:
- tensor([[1., 2., 3.]]) 
+ tensor([[1., 2., 3.]])
 Shape: torch.Size([1, 3])
 W:
  tensor([[-0.5000, -0.3000],
         [ 0.2000,  0.4000],
-        [ 0.1000,  0.1500]]) 
+        [ 0.1000,  0.1500]])
 Shape torch.Size([3, 2])
 Z:
- tensor([[0.7000, 1.3500]]) 
+ tensor([[0.7000, 1.3500]])
 Shape torch.Size([1, 2])
 Result torch sigmoid: tensor([[0.6682]])
 Result your own sigmoid: tensor([[0.6682]])
 Result torch softmax: tensor([[0.3430, 0.6570]])
 Result your own softmax: tensor([[0.3430, 0.6570]])
-/torch/venv3/pytorch/lib/python3.7/site-packages/torch/nn/modules/container.py:139: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+/torch/venv3/pytorch/lib/python3.6/site-packages/torch/nn/modules/container.py:139: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
   input = module(input)
 Neural network output:  torch.Size([1, 2])
-Loss MAE: 1.0 
+Loss MAE: 1.0
 Loss MSE: 1.0
 Loss MSE by torch: 1.0
 Target value:[[1. 0.]]
 Neural network output:[[0.423719 0.576281]]
 Loss binary cross entropy:0.7629010677337646
 Gradient of w is: [3.]
-Gradient of the network layer 1's weights is: 
+Gradient of the network layer 1's weights is:
 [[0.00496678 0.00993355 0.01490033]
  [0.01376176 0.02752351 0.04128527]
  [0.         0.         0.        ]]
-Before optimization, network layer 1's weights is: 
+Before optimization, network layer 1's weights is:
 [[-0.5669673   0.27330336  0.54320264]
  [ 0.33784539  0.22147375  0.25147405]
  [ 0.14897908 -0.46751714 -0.03618013]]
-After optimization, network layer 1's weights is: 
+After optimization, network layer 1's weights is:
 [[-0.56706667  0.2731047   0.5429046 ]
  [ 0.33757016  0.22092329  0.25064835]
  [ 0.14897908 -0.46751714 -0.03618013]]
