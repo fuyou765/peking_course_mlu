@@ -1,6 +1,6 @@
 ## 运行
 
-下载 weights [model_resnet34_triplet.pt](https://drive.google.com/file/d/1mx8-YZpGnBw3nAEC_MBtGs8j94AskDBB/view)，放到 ./face/weights/ 文件夹下。
+下载 weights [model_resnet34_triplet.pt](https://drive.google.com/file/d/1mx8-YZpGnBw3nAEC_MBtGs8j94AskDBB/view)，放到 ./face/facenet/weights/ 文件夹下。
 ```
 bash detect.sh
 ```
